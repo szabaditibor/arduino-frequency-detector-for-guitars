@@ -18,6 +18,14 @@
 
 </ul>
 
+# Built With
+
+<ul>
+  <li>
+    Arduino IDE
+  </li>
+</ul>
+
 # Circuit
 
 <p>The signal must be amplified so that the Arduino can process it. The amplification is done by a non inverting operation amplifier, which amplifies it by 5.54 (Au = (100k/22k) + 1).</p>
