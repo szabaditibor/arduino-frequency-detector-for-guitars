@@ -4,27 +4,17 @@
 
 # Features
 
-<ul>
+- Recognizes electrical frequencies up to 4.8kHz
 
-  <li>
-  Recognizes electrical frequencies up to 4.8kHz
-  </li>
-  <li>
-  Determines the SPN up to B6
-  </li>
-  <li>
-  Displays the frequency and the SPN on an LCD
-  </li>
+- Determines the SPN up to B6
 
-</ul>
+- Displays the frequency and the SPN on an LCD
+
+
 
 # Built With
 
-<ul>
-  <li>
-    Arduino IDE
-  </li>
-</ul>
+- Arduino IDE
 
 # Circuit
 
