@@ -17,3 +17,7 @@ An Arduino code that recognizes an electrical guitar's frequency and it's SPN an
   </li>
 
 </ul>
+
+# Contributors
+
+Buni Roland István, Szabadi Tibor, Szabó Bence, Török Milán
