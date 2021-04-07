@@ -2,7 +2,7 @@
 #define SOR 4
 #define OSZLOP 20
 
-LiquidCrystal lcd(1,2,4,5,6,7);
+LiquidCrystal lcd(1,2,4,5,6,7); //RS,E,D4,D5,D6,D7
 
 class Display{
 
