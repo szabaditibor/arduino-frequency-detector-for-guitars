@@ -1,45 +1,45 @@
-//Arduino elektromos gitár hangoló, frekvencia érzékelő kijelzővel
+//Arduino electric guitar tuner, frequency detection with display
 //Buni Roland István, Szabadi Tibor, Szabó Bence, Török Milán
 //v1.0
 
-//Header fájlok importálása
+//Importing header files
 #include <LiquidCrystal.h>
 #include "for_display.h"
 
-//Változók létrehozása
+//Creating variables
 #define SOR 4
 #define OSZLOP 20
 #define PIN A0
 int bekapcs,kikapcs;
 float frek,periodus;
 
-//Display példányosítása
+//Display instantiation
 Display d;
 
-//Kezdeti beállítások
+//Initial settings
 void setup()
 {
-  pinMode(PIN,INPUT); //A0 pin beállítása inputra
-  lcd.begin(OSZLOP, SOR); //Kijelző mérete
-  d.startup(); //Kezdeti kijelző
-  lcd.clear(); //Kijelző törlése
+  pinMode(PIN,INPUT); //A0 pin to input
+  lcd.begin(OSZLOP, SOR); //Display's size
+  d.startup(); //Initial display
+  lcd.clear(); //Clear display
 
 }
 
-//Futó programkód
+//Running Code
 void loop()
 {
-   bekapcs = pulseIn(PIN,HIGH); //Mikroszekundunban visszakapjuk az időt amíg magasról alacsonyra megy
-   kikapcs = pulseIn(PIN,LOW); //Mikroszekundunban visszakapjuk az időt amíg alacsonyról magasra megy
-   periodus = bekapcs+kikapcs; //Periódus kiszámítása
-   frek = 1000000.0/periodus; //Frekvencia kiszámítása
+   bekapcs = pulseIn(PIN,HIGH); //In microseconds, we get back the time until it goes from high to low
+   kikapcs = pulseIn(PIN,LOW); //In microseconds, we get back the time until it goes from low to high
+   periodus = bekapcs+kikapcs; //Period calculation
+   frek = 1000000.0/periodus; //Frequency calculation
    
-   if(periodus > 0){ //Valós adat
-    d.frequency_selector(frek); //Hang kiválasztó, és kiírató
-    lcd.setCursor(0,3); //Kurzor bal alsó sarokba áttétel
-    lcd.print(frek); //Pontos frekvencia kiíratása
+   if(periodus > 0){ //Real data
+    d.frequency_selector(frek); //SPN selector and display
+    lcd.setCursor(0,3); //Cursor to lower left corner
+    lcd.print(frek); //Exact frequency display
    }
    
-   delay(200); //Késleltető
-   lcd.clear(); //Kijelző törlése
+   delay(200); //Delay
+   lcd.clear(); //Clear display
 }
