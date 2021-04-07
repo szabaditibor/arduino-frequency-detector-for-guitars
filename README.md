@@ -22,6 +22,3 @@
 
 <b>Buni Roland István, Szabadi Tibor, Szabó Bence, Török Milán</b>
 
-# Made for
-
-Digital Signal Processing 
