@@ -724,7 +724,7 @@ void vertical_line(int i, int j){
 
 
 
-//Frekvencia kiválasztó, és kijelzőre való kiíratás
+// Frequency selector and display
 void frequency_selector(float frek){
 
 lcd.clear();
