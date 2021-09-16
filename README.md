@@ -20,7 +20,7 @@ An Arduino code that recognizes an electrical guitar's frequency and it's SPN an
 
 The signal must be amplified so that the Arduino can process it. The amplification is done by a non inverting operation amplifier, which amplifies it by 5.54 (Au = (100k/22k) + 1).
 
-A DC Offset is necessary, because the Arduino's analog pins only work in the range between 0-5V. By making a voltage divider with 2 100k ohm resistors we "push" the base voltage to 2.5V, and by doing this we have room for the amplified signal, because the capacitor charges and decharges around this voltage.
+A DC Offset is necessary, because the Arduino's analog pins only work in the range between 0-5V. By making a voltage divider with 2 100k ohm resistors we "push" the base voltage to 2.5V, and by doing this we have room for the amplified signal, because the capacitor charges and discharges around this voltage.
 
 # LCD Wiring
 
