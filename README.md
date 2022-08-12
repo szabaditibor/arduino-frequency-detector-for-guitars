@@ -1,6 +1,6 @@
 # Arduino Frequency Detector For Electrical Guitars
 
-An Arduino code that recognizes an electrical guitar's frequency and it's SPN and displays it to an LCD.
+An Arduino code that recognizes an electrical guitar's frequency and its SPN and displays it to an LCD.
 
 # Features
 
